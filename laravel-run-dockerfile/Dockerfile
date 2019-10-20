@@ -17,4 +17,6 @@ ADD . /var/www/html
 EXPOSE 8000
 #CMD apachectl -D FOREGROUND
 ENV DB_DATABASE laravel
-CMD php artisan serve --host=0.0.0.0
+CMD ["./run.sh"]
+#ENTRYPOINT ["./run.sh"]
+#CMD php artisan serve --host=0.0.0.0
